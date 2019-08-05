@@ -57,15 +57,26 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="CZKGO">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="概要&amp;#160; &amp;#160; &amp;#160; &amp;#160;本文介绍Activity中setDefaultKeyMode(@DefaultKeyMode int mode)方法的用法，setDefaultKeyMode(@DefaultKeyMode int mode)用于设置按键模式。&amp;#160; &amp;#160; &amp;#160; &amp;#160;setDefaultKeyMode(@DefaultKeyM">
+<meta name="keywords" content="Android Api">
+<meta property="og:type" content="article">
+<meta property="og:title" content="setDefaultKeyMode">
+<meta property="og:url" content="http://yoursite.com/2019/08/05/setDefaultKeyMode/index.html">
 <meta property="og:site_name" content="CZKGO">
+<meta property="og:description" content="概要&amp;#160; &amp;#160; &amp;#160; &amp;#160;本文介绍Activity中setDefaultKeyMode(@DefaultKeyMode int mode)方法的用法，setDefaultKeyMode(@DefaultKeyMode int mode)用于设置按键模式。&amp;#160; &amp;#160; &amp;#160; &amp;#160;setDefaultKeyMode(@DefaultKeyM">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5989922-d9521a60884c1b85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/480">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5989922-86a1041d7f5001e9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5989922-870ebe458e65de2c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5989922-5c5eb9084b154d59.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/480">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/5989922-8b558d0801ef24d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/480">
+<meta property="og:updated_time" content="2019-08-05T14:00:02.153Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CZKGO">
+<meta name="twitter:title" content="setDefaultKeyMode">
+<meta name="twitter:description" content="概要&amp;#160; &amp;#160; &amp;#160; &amp;#160;本文介绍Activity中setDefaultKeyMode(@DefaultKeyMode int mode)方法的用法，setDefaultKeyMode(@DefaultKeyMode int mode)用于设置按键模式。&amp;#160; &amp;#160; &amp;#160; &amp;#160;setDefaultKeyMode(@DefaultKeyM">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/5989922-d9521a60884c1b85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/480">
   <link rel="alternate" href="/atom.xml" title="CZKGO" type="application/atom+xml">
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/05/setDefaultKeyMode/">
 
 
 <script id="page.configurations">
@@ -74,7 +85,7 @@
   };
 </script>
 
-  <title>CZKGO</title>
+  <title>setDefaultKeyMode | CZKGO</title>
   
 
 
@@ -122,7 +133,7 @@
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-  <div class="container sidebar-position-left page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 <a href="https://github.com/CZKGO" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -156,7 +167,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
       
     
 
@@ -250,8 +261,9 @@
 
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-      
+
+  <div id="posts" class="posts-expand">
+    
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
@@ -272,10 +284,8 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/05/setDefaultKeyMode/" class="post-title-link" itemprop="url">setDefaultKeyMode</a>
+          <h1 class="post-title" itemprop="name headline">setDefaultKeyMode
+
               
             
           </h1>
@@ -317,6 +327,15 @@
             </span>
           
 
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon"
+              >
+                <i class="fa fa-eye"></i>
+                 阅读次数： 
+                <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+              </span>
+            </span>
           <br>
 
         </div>
@@ -328,8 +347,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
-            <h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p>&#160; &#160; &#160; &#160;本文介绍Activity中setDefaultKeyMode(@DefaultKeyMode int mode)方法的用法，setDefaultKeyMode(@DefaultKeyMode int mode)用于设置按键模式。<br>&#160; &#160; &#160; &#160;setDefaultKeyMode(@DefaultKeyMode int mode)有五种可选的按键模式分别如下：</p>
+        <h3 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h3><p>&#160; &#160; &#160; &#160;本文介绍Activity中setDefaultKeyMode(@DefaultKeyMode int mode)方法的用法，setDefaultKeyMode(@DefaultKeyMode int mode)用于设置按键模式。<br>&#160; &#160; &#160; &#160;setDefaultKeyMode(@DefaultKeyMode int mode)有五种可选的按键模式分别如下：</p>
 <ul>
 <li>DEFAULT_KEYS_DIALER</li>
 <li>DEFAULT_KEYS_DISABLE</li>
@@ -357,18 +375,44 @@
 <h4 id="DEFAULT-KEYS-SEARCH-GLOBAL"><a href="#DEFAULT-KEYS-SEARCH-GLOBAL" class="headerlink" title="DEFAULT_KEYS_SEARCH_GLOBAL"></a><em>DEFAULT_KEYS_SEARCH_GLOBAL</em></h4><p>  使用该模式当你点击键盘时，会调用系统的全局搜索。如下图：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/5989922-8b558d0801ef24d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/480" alt="图片.png"></p>
 
-          
-        
-      
     </div>
 
     
     
     
     
+      <div>
+        <div id="reward-container">
+  <div>如果觉得可以请酌情赞助</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="CZKGO 微信支付">
+        <p>微信支付</p>
+      </div>
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/alipay.png" alt="CZKGO 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+      </div>
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
+          
+        
+        <div class="post-tags">
+            <a href="/tags/Android-Api/" rel="tag"># Android Api</a>
+          
+        </div>
     </footer>
   </div>
   
@@ -376,14 +420,19 @@
   
   </article>
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+    
+    
+  <div class="comments" id="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80NTc4OS8yMjMwMA"></div>
+  </div>
+  
+  
+
 
         </div>
           
@@ -398,8 +447,17 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -484,6 +542,23 @@
 
         </div>
       </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概要"><span class="nav-number">1.</span> <span class="nav-text">概要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#准备"><span class="nav-number">2.</span> <span class="nav-text">准备</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DEFAULT-KEYS-DISABLE"><span class="nav-number">2.1.</span> <span class="nav-text">DEFAULT_KEYS_DISABLE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DEFAULT-KEYS-DIALER"><span class="nav-number">2.2.</span> <span class="nav-text">DEFAULT_KEYS_DIALER</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DEFAULT-KEYS-SHORTCUT"><span class="nav-number">2.3.</span> <span class="nav-text">DEFAULT_KEYS_SHORTCUT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DEFAULT-KEYS-SEARCH-LOCAL"><span class="nav-number">2.4.</span> <span class="nav-text">DEFAULT_KEYS_SEARCH_LOCAL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DEFAULT-KEYS-SEARCH-GLOBAL"><span class="nav-number">2.5.</span> <span class="nav-text">DEFAULT_KEYS_SEARCH_GLOBAL</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
     </div>
   </aside>
@@ -563,6 +638,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.3.0"></script>
+<script src="/js/post-details.js?v=7.3.0"></script>
+
+
 
   <script src="/js/next-boot.js?v=7.3.0"></script>
 
@@ -612,6 +691,20 @@
 
 
     
+
+<script>
+  window.livereOptions = {
+    refer: '2019/08/05/setDefaultKeyMode/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
 
 
 </body>
